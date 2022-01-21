@@ -1,0 +1,19 @@
+.view-notes-header {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px 0;
+}
+.view-notes-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.view-notes-list-items {
+  width: 300px;
+  color: royalblue;
+  margin: 10px auto;
+  list-style-type: none;
+  padding: 10px;
+  box-shadow: 0 0 10px 0 #002;
+  border-radius: 5px;
+}
