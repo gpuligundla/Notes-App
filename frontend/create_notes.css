@@ -1,0 +1,36 @@
+.create-notes-header {
+  font-size: 40px;
+  text-align: center;
+  margin: 10px;
+  font-weight: 500;
+}
+.create-notes-form {
+  width: max-content;
+  margin: 0px auto;
+}
+.create-notes-textarea {
+  height: 300px;
+  width: 500px;
+  font-size: 20px;
+}
+.create-notes-author {
+  margin-top: 5px;
+  width: 500px;
+}
+.create-notes-button {
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgb(255, 130, 57);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.create-notes-button:hover {
+  background-color: rgb(156, 44, 0);
+}
+.create-notes-button:active {
+  transform: scale(0.9);
+}

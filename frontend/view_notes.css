@@ -10,10 +10,13 @@
 }
 .view-notes-list-items {
   width: 300px;
-  color: royalblue;
+  box-shadow: 0 0 10px 0px #002;
   margin: 10px auto;
   list-style-type: none;
   padding: 10px;
-  box-shadow: 0 0 10px 0 #002;
-  border-radius: 5px;
+  border-radius: 4px;
+}
+.view-notes-author {
+  color: brown;
+  margin-top: 20px;
 }
