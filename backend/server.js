@@ -2,8 +2,9 @@ const express = require("express");
 const mongoconnect = require("./ConnectToMongo");
 const app = express();
 const mongo_schema = require("./schema");
+const cors = require("cors");
 app.use(express.json());
-
+app.use(cors());
 app.get('/', (req, res)=>{
     return res.json("true");
 });
@@ -16,7 +17,7 @@ app.post('/', async(req, res)=>{
         notes: body.notes
     });
     await newnontes.save();
-    return res.json("true-post");
+    return res.json("true");
 });
 
 app.listen(1233, ()=>{
