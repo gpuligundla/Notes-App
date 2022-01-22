@@ -5,8 +5,11 @@ const mongo_schema = require("./schema");
 const cors = require("cors");
 app.use(express.json());
 app.use(cors());
-app.get('/', (req, res)=>{
-    return res.json("true");
+
+app.get('/', async(req, res)=>{
+    const noteslist = await mongo_schema.find();
+    console.log(noteslist);
+    return res.json(noteslist);
 });
 
 app.post('/', async(req, res)=>{

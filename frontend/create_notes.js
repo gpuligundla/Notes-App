@@ -12,7 +12,7 @@ const createnotes = async ()=>{
         }
     });
     console.log(response);
-    if(response.data==true)
+    if(response.data=="true")
     alert("Note successfully saved");
     else
     alert("Something went wrong");
